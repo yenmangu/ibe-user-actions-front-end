@@ -1,0 +1,47 @@
+[
+	{
+		"?xml": "",
+		"logquery": {
+			"device": {
+				"history": "\nTM:1725552140,GC:ponty,SE:42,NO:0,AT:P,MO:moto e6 play,AI:A,CD:ASSIMILATE,DT:42+8.0.-1\nTM:1725552134,GC:ponty,SE:42,NO:0,AT:P,MO:moto e6 play,AI:A,CD:ASSIMILATE,DT:42+8.-1.-1\nTM:1725551854,GC:ponty,SE:42,NO:0,AT:P,MO:moto e6 play,AI:A,CD:NAMESDB,DT:(extended)\nTM:1725551846,GC:ponty,SE:42,NO:0,AT:P,MO:moto e6 play,AI:A,CD:ASSIMILATE,DT:-1+-1.-1.-1\nTM:1725549278,GC:ponty,SE:42,NO:0,AT:P,MO:moto e6 play,AI:A,CD:ASSIMILATE,DT:42+8.-1.-1\nTM:1725548655,GC:ponty,SE:42,NO:0,AT:P,MO:moto e6 play,AI:A,CD:NAMESDB,DT:(extended)\nTM:1725548649,GC:ponty,SE:42,NO:0,AT:P,MO:moto e6 play,AI:A,CD:ASSIMILATE,DT:-1+-1.-1.-1\n"
+			}
+		}
+	},
+	{
+		"timeMeta": {
+			"name": "timeMeta",
+			"epoch": 1725552140,
+			"fullDate": "2024-09-05T16:02:20.000Z",
+			"format": "05-09-2024"
+		},
+		"gameCode": {
+			"name": "gameCode",
+			"gameCode": "ponty"
+		},
+		"SE": {
+			"name": "SE",
+			"SE": "unknown prop"
+		},
+		"uNumber": {
+			"name": "uNumber",
+			"number": "0"
+		},
+		"uType": {
+			"name": "uType",
+			"unitType": "P"
+		},
+		"unknownProp_5": {
+			"name": "unknownProp_5"
+		},
+		"AI": {
+			"name": "AI",
+			"AI": "unknown prop"
+		},
+		"unknownProp_7": {
+			"name": "unknownProp_7"
+		},
+		"unknownProp_8": {
+			"name": "unknownProp_8"
+		}
+	}
+]

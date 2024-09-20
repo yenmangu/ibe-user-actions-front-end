@@ -1,0 +1,89 @@
+* {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.controls {
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 1rem;
+}
+.input-wrapper {
+	width: max-content;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1rem;
+	white-space: pre;
+}
+
+.button-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	gap: 1rem;
+
+	button {
+		white-space: nowrap;
+	}
+}
+
+label {
+	font-size: 0.8rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+}
+label.start-from {
+	width: fit-content;
+}
+
+label {
+	input#startfrom {
+		// width: 2.5rem;
+		// max-width: fit-content;
+		// width: max-content;
+		field-sizing: content;
+		min-width: 2.4rem;
+	}
+	input#gamecode {
+		max-width: 8rem;
+	}
+}
+.wrapper {
+	display: flex;
+	gap: 1rem;
+}
+
+.pdf-download {
+	margin: auto;
+}
+
+.details {
+	margin-bottom: 1rem;
+}
+
+.center {
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+}
+th {
+	font-weight: 600;
+	vertical-align: text-top;
+}
+
+td {
+	padding: 0.2rem;
+	border-bottom: 1px solid #008080;
+}
+.wrap {
+	max-width: 5rem;
+	white-space: pre-wrap;
+}

@@ -1,0 +1,81 @@
+<h2>User Action History</h2>
+<div class="controls">
+	<div class="input-wrapper">
+		<label for="gamecode"
+			>Enter Game Code
+
+			<input
+				type="text"
+				id="gamecode"
+				[(ngModel)]="params.gameCode" />
+		</label>
+		<label
+			class="start-from"
+			for="startfrom">
+			Choose From How Many Days Ago
+			<input
+				type="number"
+				id="startfrom"
+				min="1"
+				[(ngModel)]="params.startFrom"
+				(keyup.enter)="handleClick()" />
+		</label>
+	</div>
+	<div class="button-wrapper">
+		<button
+			id="execute"
+			(click)="handleClick()">
+			GO
+		</button>
+		<button
+			id="handlePdf"
+			class="pdf-download"
+			(click)="handlePDF()">
+			Download PDF
+		</button>
+	</div>
+</div>
+<div
+	class="canvas"
+	#canvas
+	id="actionCanvas">
+	<div class="details">
+		<h4>Game Code: {{ params.gameCode }}</h4>
+		<h4>Start From: {{ params.startFrom }}</h4>
+	</div>
+
+	<ng-container *ngIf="requestSent">
+		<ng-container *ngIf="errorDisplay.display && errorDisplay.display === true">
+			<h3>{{ errorDisplay.message }}</h3>
+		</ng-container>
+		<ng-container *ngIf="tableReady">
+			<table
+				#breakdown
+				id="actionTable">
+				<tr>
+					<th>Date</th>
+					<th>Game Code</th>
+					<th>Device ID</th>
+					<th class="wrap">Unit Number</th>
+					<th class="wrap">Unit Type</th>
+					<th>Command</th>
+					<th>Details</th>
+				</tr>
+				<tr *ngFor="let action of queryObject.actionHistory; let i = index">
+					<td>{{ returnStringDate(action) }}</td>
+					<td class="center">{{ action.gameCode?.gameCode }}</td>
+					<td
+						class="center"
+						[style.color]="queryObject.deviceColours[action.deviceId]">
+						{{ action.deviceId }}
+					</td>
+
+					<td class="center">{{ action.uNumber?.number }}</td>
+					<td class="center">{{ action.uType?.unitType }}</td>
+					<td>{{ action.command?.command }}</td>
+					<td>{{ action.details?.details }}</td>
+				</tr>
+			</table>
+		</ng-container>
+	</ng-container>
+</div>
