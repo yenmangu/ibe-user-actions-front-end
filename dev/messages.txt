@@ -1,0 +1,3 @@
+companion	(origin)								->		user-actions
+user-actions (size)   						->		companion
+companion (gamecode, origin)   		->		user-actions

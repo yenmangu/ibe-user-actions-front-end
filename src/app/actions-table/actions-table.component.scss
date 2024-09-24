@@ -2,7 +2,12 @@
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
 		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+#contentBox {
+	padding-top: 1rem;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
 .controls {
 	margin: auto;
 	display: flex;
@@ -69,7 +74,7 @@ label {
 	margin: auto;
 }
 
-.details {
+.parameters {
 	margin-bottom: 1rem;
 }
 
@@ -77,17 +82,50 @@ label {
 	text-align: center;
 }
 
+.table {
+	display: block;
+	max-width: 1280px;
+	width: 100%;
+	margin: auto;
+}
+
 table {
 	border-collapse: collapse;
+	table-layout: auto;
+	width: 100%;
 }
 th {
 	font-weight: 600;
 	vertical-align: text-top;
 }
 
+th.details {
+	text-align: left;
+	padding-left: 1rem;
+}
+
 td {
+	font-size: 12px;
 	padding: 0.2rem;
 	border-bottom: 1px solid #008080;
+}
+
+td.id,
+td.gamecode,
+td.command,
+td.date,
+td.unit,
+td.unumber {
+	font-size: 14px;
+	text-wrap: balance;
+}
+
+td.details {
+	font-size: 12px;
+	max-width: 600px;
+	white-space: pre !important;
+	text-wrap: wrap !important;
+	word-wrap: break-word !important;
 }
 .wrap {
 	max-width: 5rem;
